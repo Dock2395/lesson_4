@@ -1,0 +1,169 @@
+/* Комбінація класів */
+/* text ТА lesson */
+/*
+.text,
+.lesson{
+	color: red;
+}
+*/
+/* text ТА lesson ОДНОЧАСНО!!! */
+/*
+.text.lesson{
+	color: red;
+}
+*/
+
+/* Вкладеність класів */
+/*
+.text .lesson {
+	color: red;
+}
+*/
+
+/* -------- ПРІОРИТЕТ СЕЛЕКТОРІВ ------------ */
+/*
+Основні правила формування пріоритетів: 
+1) У випадку рівнозначних селекторів більший 
+пріоритет буде у останього по коду.
+2) Більший пріоритет завжди буде у селектора,
+який звужує (уточює, конкретизує) пошук (запит).
+3) Пріоритет у рядкових (inline) стилів (атрибут style="") вищий ніж у стилів з окремого файлу (наприклад style.css)
+4) Флаг !important перезаписує пріоритет (не рекомендується)
+*/
+
+/* ==================== */
+/*
+../ - вийти з папки на один рівень вище
+*/
+/* ======================= */
+
+
+/* ====================== ШРИФТИ =============================== */
+
+
+
+/*--------- Підключення шрифтів ---------------- 
+
+
+
+body{
+	font-family: "CircularStd";
+}
+
+
+.title{
+	font-family: "Qwitcher Grypen";
+}
+
+*/
+
+body{
+	padding: 15px;
+}
+
+div, p, h1, h2, ul, ol, img{
+	margin-bottom: 15px;
+}
+
+img{
+	width: 400px;
+}
+
+p{
+	font-family: "Roboto";
+	font-size: 16px; 
+	line-height: 1.3;
+	text-indent: 20px;
+}
+
+h1{
+	font-family: "TeXGyreCursor";
+	font-weight: 700;
+	font-style: italic;
+	font-size: 22px;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 5px 5px 4px #000; 
+}
+
+h2{
+	font-family: "Montserrat";
+	font-weight: 700;
+	font-style: italic;
+	font-size: 20px;
+	text-align: center;
+	color: blue;
+}
+
+#symptoms + p {
+	color: red;
+}
+
+span{
+	text-decoration: underline;
+}
+
+ul{
+	font-family: "Lato";
+	font-weight: 700;
+	text-align: right;
+	margin-right: 20px;
+}
+
+ul li{
+	font-size: 16px; 
+	line-height: 1.5;
+	text-decoration: underline;
+}
+
+ul li a{
+	color: orangered;
+	text-decoration: underline; 
+}
+
+ol li{
+	font-family: "Larsseit";
+	font-weight: 700;
+}
+
+p ~ ol{
+	letter-spacing: 3px;
+}
+
+p ~ ol li{
+	text-transform: capitalize;
+	
+}
+
+a:hover{
+	color: green;
+}
+
+mark{
+	white-space: nowrap;
+	word-spacing: 5px; 
+}
+
+.recomend{
+	padding: 30px;
+	text-align: center;
+}
+
+.soc{
+	font-family: "TeXGyreCursor";
+	font-weight: 700;
+	font-style: italic;
+	font-size: 10px;
+	text-align: left;
+	margin-top: 10px;
+}
+
+.soc.recomend{
+	color: rgb(226, 204, 5);
+}
+
+main > h2{
+	color: green;
+}
+
+
